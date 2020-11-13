@@ -7,7 +7,7 @@ function App() {
   const [people, setPeople] = useState(data)
 
   const handlerChange = () => {
-    document.getElementById('birthdayList').innerHTML =
+    document.getElementById('noMoreBirthdays').innerHTML =
       'There are no more birthdays!'
 
     document.getElementById('numberBirthdays').innerHTML = 0
