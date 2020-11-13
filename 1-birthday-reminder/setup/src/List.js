@@ -1,11 +1,23 @@
-import React from 'react';
+import './index.css'
+import React from 'react'
+import data from './data'
 
-const List = () => {
+const List = (props) => {
   return (
     <>
-      <h2>list component</h2>
+      {props.people.map((e) => {
+        return (
+          <div className='person'>
+            <img src={e.image} alt='image' />
+            <section>
+              <h4>{e.name}</h4>
+              <p>{e.age} years</p>
+            </section>
+          </div>
+        )
+      })}
     </>
-  );
-};
+  )
+}
 
-export default List;
+export default List
